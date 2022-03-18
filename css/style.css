@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    border: 1px solid white;
+    width: 70%;
+    color: white;
+    
+}
+.btm li {
+    border-right: 1px solid green;
+
+    
+}
+
+.btm li:first-child{
+    background-color: red;
+    
+}
+.btm li:first-child a{
+    color: white;
+}
+
+.btm li a{
+color: grey;
+text-decoration: none;
+}
+nav{
+    background-color: black;
+}
