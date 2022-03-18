@@ -73,3 +73,7 @@ main{
 input[type=checkbox]{
     width: 30px;
 }
+#map{
+    height: 30vw;
+    width: 50%;
+}
