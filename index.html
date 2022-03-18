@@ -94,9 +94,119 @@
           </div>
 
 <!-- menu section -->
-     <section class="menu">
-         <h3>Your Menu</h3>
-         
+     <section class="menu p-5 " style="background-image: url('assets/images/first.jpg');">
+         <h3 class="text-center text-muted">Your Menu</h3>
+         <div class="port d-flex mt-4 ">
+             
+             <div class="second">
+                <div class="card-group d-flex ">
+                    <div class="card">
+                      <img src="assets/images/pizza-8.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Small</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                            <p><em>chose the crust and toppings of your pizza</em></p>
+                            <div class="butp d-flex justify-content-between">
+                            <div class="opts">
+                                <select class="d-block  mb-3" name="crust" id="crus">
+                                    <option value="crispy">crispy</option>
+                                    <option value="stuffed">stuffed</option>
+                                    <option value="glutten-free">glutten-free</option>
+                                </select>
+    
+                                <select class="d-block " name="topping" id="topi">
+                                    <option value="roasted-tomato">Roasted-tomato</option>
+                                    <option value="roasted-brocolli">Roasted-brocolli</option>
+                                    <option value="roasted-fennel">Roasted-fennel</option>
+                                </select>
+                            </div>
+                            <div class="sc">
+                                <h6>cart</h6>
+                                <button class="btn btn-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            </div>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="assets/images/pizza-5.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Medium</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"><p><em>chose the crust and toppings of your pizza</em></p>
+                            <div class="butp d-flex justify-content-between">
+                            <div class="opts">
+                                <select class="d-block  mb-3" name="crust" id="crus">
+                                    <option value="crispy">crispy</option>
+                                    <option value="stuffed">stuffed</option>
+                                    <option value="glutten-free">glutten-free</option>
+                                </select>
+    
+                                <select class="d-block " name="topping" id="topi">
+                                    <option value="roasted-tomato">Roasted-tomato</option>
+                                    <option value="roasted-brocolli">Roasted-brocolli</option>
+                                    <option value="roasted-fennel">Roasted-fennel</option>
+                                </select>
+                            </div>
+                            <div class="sc">
+                                <h6>cart</h6>
+                                <button class="btn btn-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            </div></small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="assets/images/pizza-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Large</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"><p><em>chose the crust and toppings of your pizza</em></p>
+                            <div class="butp d-flex justify-content-between">
+                            <div class="opts">
+                                <select class="d-block  mb-3" name="crust" id="crus">
+                                    <option value="crispy">crispy</option>
+                                    <option value="stuffed">stuffed</option>
+                                    <option value="glutten-free">glutten-free</option>
+                                </select>
+    
+                                <select class="d-block " name="topping" id="topi">
+                                    <option value="roasted-tomato">Roasted-tomato</option>
+                                    <option value="roasted-brocolli">Roasted-brocolli</option>
+                                    <option value="roasted-fennel">Roasted-fennel</option>
+                                </select>
+                            </div>
+                            <div class="sc">
+                                <h6>cart</h6>
+                                <button class="btn btn-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            </div></small>
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+         </div>
+
+
+     </section>
+
+     <section class="deliveries text-center text-light bg-dark">
+         <h5 class="text-center text-muted">Deliveries</h5>
+
+         <label class="form-label mx-auto" for="location">Enter your location within Nairobi</label>
+         <input type="text" id="location" class="form-control mx-auto w-50 mb-5 bg-transparent">
+
+         <label for="confirm" class="form-label mx-auto">Check the box if you would like your pizza delivered to you</label>
+         <input type="checkbox" id="confirm" class=" mx-auto ">
+         <br>
+         <button class="btn btn-warning" id="send">Send</button>
      </section>
 
 
