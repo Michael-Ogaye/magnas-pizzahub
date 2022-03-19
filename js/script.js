@@ -14,7 +14,7 @@ function Pizza (size,crust,topping,price,quantity, transport){
 }
 
 //pizza prototypes
-Pizza.prototype.calulateTotalPrice=function(){
+Pizza.prototype.calculateTotalPrice=function(){
     let unitPrice= parseInt(this.price.slice(3));
     let NumQuantity= parseInt(this.quantity);
     return (unitPrice*NumQuantity)+this.transport;
@@ -36,17 +36,17 @@ let cartBtns=$('.sc button');
 
 
         // transport cost
-        let loctn=$('.deliveries input[type=text]').val();
-        let check=$('.deliveries input[type=checkbox]').val();
-        let transport=0;
+        let loctn=$('#location').val();
+        let check=$('#chk')
+        let transport = 0;
         check.change(function(){
             if(this.checked && loctn != ''){
-                transport+=300
+                transport= transport+300;
 
             }
 
             else{
-                transport=0;
+                
             }
         })
 
@@ -68,11 +68,11 @@ let cartBtns=$('.sc button');
       <tr>
   <td>${newEntry.size}</td>
   <td>${newEntry.crust}</td>
-  <td>${newEntry.topping}</td>s
+  <td>${newEntry.topping}</td>
   <td>${newEntry.price}</td>
   <td>${newEntry.quantity}</td>
   <td>${newEntry.transport}</td>
-  <td>${newEntry.calulateTotalPrice()}</td>
+  <td class= "capt">${newEntry.calculateTotalPrice()}.</td>
 
 
 </tr>
@@ -80,7 +80,39 @@ let cartBtns=$('.sc button');
       
       `
       table[0].innerHTML+=tableData;
+      
+      //populating the totals
 
+    
+      let lastCol=$('.capt').text().split('.')
+      let arrSum=[];
+      for(var i=0;i<(lastCol.length-1);i++){
+          arrSum.push(lastCol[i]);
+      }
+      let ttsumA= arrSum.map((a)=>{
+          return +a ;
+      })
+    
+      
+      let totalAmount=ttsumA.reduce((total,sum)=>{
+          return total+sum;
+
+      },0)
+
+      console.log(lastCol,arrSum,ttsumA,totalAmount);
+      let tfoot=$('table tfoot');
+      let tfotVal=`
+      <tr class="p-4">
+            <td>TOTAL SPENDING</td>
+            <td class="text-danger">${totalAmount}</td>
+
+         </tr>
+
+
+      `
+      tfoot[0].innerHTML=tfotVal;
+
+    
 
 
 
