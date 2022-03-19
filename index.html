@@ -230,10 +230,20 @@
          </div>
      </section>
 
-     <section class="physical">
+     <section class="physical bg-dark p-2">
+       <h6 class="text-center text-light mb-5">Contact us</h6>
+
+
          <div id="map">
 
          </div>
+         <div class="contact-info">
+           <form action="">
+             
+           </form>
+         </div>
+
+
      </section>
 
 
@@ -245,10 +255,10 @@
        // Initialize and add the map
 function initMap() {
   // The location of imara Daima
-  const imara= { lat: -27.2046, lng: 77.4977 };
+  const imara= { lat: -1.3284, lng: 36.8806 };
   // The map, centered at ImaraDaima
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 13,
     center: imara,
   });
   // The marker, positioned at imara
