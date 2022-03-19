@@ -12,6 +12,15 @@ function Pizza (size,crust,topping,price,quantity){
 
 }
 
+//pizza prototypes
+Pizza.prototype.calulateTotalPrice=function(){
+    let unitPrice= parseInt(this.price(slice(3)))
+    let NumQuantity= parseInt(this.quantity);
+    return unitPrice*NumQuantity;
+
+
+}
+
 
 
 // This is the ui logic
@@ -29,7 +38,22 @@ let cartBtns=$('.sc button');
     console.log(newEntry)
 
     // generating the price details table
-    let table=$('table tbody')
+      let table=$('table tbody');
+      let tableData=`
+      <tr>
+  <td>${newEntry.size}</td>
+  <td>${newEntry.crust}</td>
+  <td>${newEntry.topping}</td>s
+  <td>${newEntry.price}</td>
+  <td>${newEntry.quantity}</td>
+  <td>${newEntry.calulateTotalPrice()}</td>
+
+
+</tr>
+
+      
+      `
+
 
 
 
