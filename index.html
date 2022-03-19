@@ -248,12 +248,12 @@ function initMap() {
   const imara= { lat: -27.2046, lng: 77.4977 };
   // The map, centered at ImaraDaima
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 4,
     center: imara,
   });
   // The marker, positioned at imara
   const marker = new google.maps.Marker({
-    position: uluru,
+    position: imara,
     map: map,
   });
 }
@@ -261,7 +261,7 @@ function initMap() {
     
 
 
-<script async
+<script 
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYuieQLJK0XdOXT6ZDG6_W1fuI9Xok7yQ&callback=initMap&v=weekly"
       async
     ></script>
