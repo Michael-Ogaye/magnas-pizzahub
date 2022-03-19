@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: 0 auto;
+}
 
 hr{
     border: 1px solid white;
@@ -54,8 +57,9 @@ main{
     height: 80%;
     background-image: url('../assets/images/table.jpg');
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 59% 85%, 46% 99%, 35% 84%, 0 83%); */
-    padding-bottom: 4vw;
+    
     background-size: cover;
+    
 }
 .carousel-item img{
     height: 90%;
@@ -66,6 +70,8 @@ main{
 }
 .menu{
     background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-blend-mode: multiply;
     
 }
@@ -81,8 +87,36 @@ input[type=checkbox]{
 .contact-info form input{
     border-bottom: 1px solid white;
 }
+
 .contact-info input:focus{
     outline: none;
+}
+.card-group{
+    
+    margin: 0 auto;
+   
+}
+.card img{
+    height: 25vw;
+    width: 70%;
+    margin: 0 auto;
+}
+.card{
+    height: 100%;
+}
+
+.card img.laga{
+    width: 100%;
+}
+
+.opts select{
+    border-radius: 20%;
+    padding: 2%;
+    background-color: transparent;
+    border: 1px solid orange;
+}
+.strait{
+    box-sizing: border-box;
 }
 
 
@@ -99,6 +133,43 @@ input[type=checkbox]{
 
     .card-group{
         flex-direction: column;
+    }
+
+    .rep{
+        flex-direction: column;
+    }
+    .price{
+        width: 100%;
+    }
+
+    .lapa{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    #map{
+        width: 90%;
+        margin: 0 auto;
+        height: 100vw;
+    }
+    .contact-info form input{
+        width: 100%;
+    }
+    .contact-info form{
+        text-align: center;
+    }
+
+    .contact-info form button{
+
+        
+        
+    }
+    .butp{
+        flex-wrap: wrap;
+        
+    }
+    .card img{
+        height: 45vw;
     }
 
 
