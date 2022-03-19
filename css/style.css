@@ -77,3 +77,10 @@ input[type=checkbox]{
     height: 30vw;
     width: 50%;
 }
+
+.contact-info form input{
+    border-bottom: 1px solid white;
+}
+.contact-info input:focus{
+    outline: none;
+}
