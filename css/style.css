@@ -84,3 +84,22 @@ input[type=checkbox]{
 .contact-info input:focus{
     outline: none;
 }
+
+
+
+
+/* media queries */
+@media only screen and (max-width: 1290px){
+
+    nav div.top{
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-group{
+        flex-direction: column;
+    }
+
+
+}

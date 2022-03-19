@@ -13,7 +13,7 @@ function Pizza (size,crust,topping,price,quantity, transport){
 
 }
 
-//pizza prototypes
+//pizza prototype
 Pizza.prototype.calculateTotalPrice=function(){
     let unitPrice= parseInt(this.price.slice(3));
     let NumQuantity= parseInt(this.quantity);
@@ -36,12 +36,16 @@ let cartBtns=$('.sc button');
 
 
         // transport cost
-        let loctn=$('#location').val();
-        let check=$('#chk')
-        let transport = 0;
-        check.change(function(){
+
+        let loctn=$('input#location').val();
+        let checka=$('#confirm')
+        console.log(checka)
+        var transport = 0;
+        checka.change(function(){
             if(this.checked && loctn != ''){
+                alert('i am checked')
                 transport= transport+300;
+                
 
             }
 
