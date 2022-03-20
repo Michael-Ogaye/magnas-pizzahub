@@ -97,7 +97,7 @@ input[type=checkbox]{
    
 }
 .card img{
-    height: 25vw;
+    height: 20vw;
     width: 70%;
     margin: 0 auto;
 }
@@ -118,7 +118,14 @@ input[type=checkbox]{
 .strait{
     box-sizing: border-box;
 }
+.btm li:hover{
+    background-color: orange;
+    border-right: 3px solid ;
+}
 
+.sc button:hover{
+    transform: scale(1.2);
+}
 
 
 
