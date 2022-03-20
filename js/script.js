@@ -23,6 +23,25 @@ Pizza.prototype.calculateTotalPrice=function(){
 }
 
 
+// adding the Transport costs for each order
+ 
+
+var transport = 0;
+
+$('#confirm').val(this.checked);
+
+    $('#confirm').change(function() {
+        if(this.checked) {
+            transport=+300;
+            $(this).prop("checked", transport);
+        }
+        else{
+            transport=0;
+        }
+            
+    });
+
+
 
 // This is the ui logic
 let cartBtns=$('.sc button');
@@ -35,24 +54,7 @@ let cartBtns=$('.sc button');
         let quantity= $(this).closest('.card').find('.quantity input').val();
 
 
-        // transport cost
-
-        let loctn=$('input#location').val();
-        let checka=$('#confirm')
-        console.log(checka)
-        var transport = 0;
-        checka.change(function(){
-            if(this.checked && loctn != ''){
-                alert('i am checked')
-                transport= transport+300;
-                
-
-            }
-
-            else{
-                
-            }
-        })
+       
 
 
 
