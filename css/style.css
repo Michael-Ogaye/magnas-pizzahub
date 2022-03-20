@@ -11,7 +11,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .carousel-item{
-    font-family: 'Dancing Script', curs
+    font-family: 'Dancing Script', 
 }
 
 hr{
@@ -70,10 +70,10 @@ main{
 }
 .carousel-item img{
     height: 90%;
-    clip-path: circle();
+   
 }
 .first{
-    width: 30%;
+    width: 90%;
 }
 .menu{
     background-color: black;
@@ -173,6 +173,11 @@ input[type=checkbox]{
 /* media queries */
 @media only screen and (max-width: 1290px){
 
+    .carousel-item img{
+         clip-path: circle();
+
+    }
+
     nav div.top{
         background-color: orange;
         display: flex;
@@ -217,7 +222,9 @@ input[type=checkbox]{
         
     }
     .card img{
-        height: 45vw;
+        height: 50vw;
+        width: 100%;
+        
     }
 
 
@@ -242,6 +249,18 @@ input[type=checkbox]{
     table tfoot tr td:nth-child(2){
 
         display: initial;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+
+    table tr td:nth-child(4){
+        display: none;
+
+    }
+    table td{
+        font-size: 12px;
     }
 
 }
