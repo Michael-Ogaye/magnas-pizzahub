@@ -69,6 +69,11 @@ $(document).ready(function(){
         }
     })
 
+    // spending table toggler
+    $('#tg').click(function (){
+        $(this).closest('.price').find('.strait').slideToggle();
+
+    })
     
 
 })
