@@ -16,7 +16,18 @@ function Pizza (size,crust,topping,price,quantity, transport){
 //pizza prototype
 Pizza.prototype.calculateTotalPrice=function(){
     let unitPrice= parseInt(this.price.slice(3));
-    let NumQuantity= parseInt(this.quantity);
+
+    let NumQuantity=0;
+
+    if(this.quantity!= ''){
+        NumQuantity= parseInt(this.quantity);
+
+    }
+    else{
+        NumQuantity= 0;
+    }
+     
+    
     return (unitPrice*NumQuantity)+this.transport;
 
 
@@ -55,15 +66,7 @@ let cartBtns=$('.sc button');
 
 
        
-
-
-
-
-
-
-
-
-       
+// creating a new instance of the pizza object
 
     let newEntry= new Pizza(size,crust,topping,price,quantity,transport);
     console.log(newEntry)
@@ -119,7 +122,11 @@ let cartBtns=$('.sc button');
       tfoot[0].innerHTML=tfotVal;
 
     
-
+// cloning the image into the basket
+ let clona= $(this).closest('.card').find('img').clone();
+ clona.addClass('fly');
+ let basket = $('.basket');
+ basket.before(clona);
 
 
 

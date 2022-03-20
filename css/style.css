@@ -134,6 +134,40 @@ input[type=checkbox]{
     transform: scale(1.2);
 }
 
+.fly{
+    height: 3vw;
+    width: 3vw;
+    display: block;
+    text-align: center;
+    
+    margin-top: -5vw;
+    animation: flyinto 2s ease-in 1 forwards ;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+
+@keyframes flyinto{
+
+    0%{
+        transform: translateX(1vw);
+    }
+    50%{
+        transform: translateX(20vw);
+
+        
+    }
+    75%{
+        transform: translateY(20vw);
+        
+    }
+    100%{
+        height: 0;
+        width: 0;
+    }
+
+
+}
+
 
 
 /* media queries */
