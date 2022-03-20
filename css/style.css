@@ -1,3 +1,6 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Redressed&family=Shizuru&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +8,10 @@
 }
 body{
     margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+.carousel-item{
+    font-family: 'Dancing Script', curs
 }
 
 hr{
@@ -179,5 +186,28 @@ input[type=checkbox]{
         height: 45vw;
     }
 
+
+}
+
+@media only screen and (max-width: 730px){
+    table td{
+        width: 1vw;
+        padding: 2vw;
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+
+    table tr td:nth-child(2),
+    table tr td:nth-child(3),
+    table tr td:nth-child(4){
+        display: none;
+
+
+    }
+
+    table tfoot tr td:nth-child(2){
+
+        display: initial;
+    }
 
 }
