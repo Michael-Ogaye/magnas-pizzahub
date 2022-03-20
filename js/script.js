@@ -24,7 +24,7 @@ Pizza.prototype.calculateTotalPrice=function(){
 
     }
     else{
-        NumQuantity= 0;
+        NumQuantity= 1;
     }
      
     
